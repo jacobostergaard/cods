@@ -58,8 +58,8 @@
       alpha
       p = nrow(alpha)
       r = ncol(alpha)
-      alphaPerp = qr.Q(qr(alpha), complete = TRUE)[,(p-r):p]
-      betaPerp = qr.Q(qr(beta), complete = TRUE)[,(p-r):p]
+      alphaPerp = qr.Q(qr(alpha), complete = TRUE)[,(r+1):p]
+      betaPerp = qr.Q(qr(beta), complete = TRUE)[,(r+1):p]
       check1 = abs(sum(t(alphaPerp)%*%alpha)) < 1e-10
       check2 = abs(sum(t(betaPerp)%*%beta)) < 1e-10
       check3 = det(t(alphaPerp)%*%betaPerp) != 0
