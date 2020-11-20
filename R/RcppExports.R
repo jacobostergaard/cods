@@ -2,62 +2,62 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 bootstrapCpp <- function(X, B, dt) {
-    .Call('cods_bootstrapCpp', PACKAGE = 'cods', X, B, dt)
+    .Call('_cods_bootstrapCpp', PACKAGE = 'cods', X, B, dt)
 }
 
 bootstrapCppOld <- function(X, B, dt) {
-    .Call('cods_bootstrapCppOld', PACKAGE = 'cods', X, B, dt)
+    .Call('_cods_bootstrapCppOld', PACKAGE = 'cods', X, B, dt)
 }
 
 exactSimulation <- function(N, dt, z0, freq, lvl, s_phi, s_gam, model) {
-    .Call('cods_exactSimulation', PACKAGE = 'cods', N, dt, z0, freq, lvl, s_phi, s_gam, model)
+    .Call('_cods_exactSimulation', PACKAGE = 'cods', N, dt, z0, freq, lvl, s_phi, s_gam, model)
 }
 
 factorialCpp <- function(x, result = 1L) {
-    .Call('cods_factorialCpp', PACKAGE = 'cods', x, result)
+    .Call('_cods_factorialCpp', PACKAGE = 'cods', x, result)
 }
 
 kronSum <- function(A) {
-    .Call('cods_kronSum', PACKAGE = 'cods', A)
+    .Call('_cods_kronSum', PACKAGE = 'cods', A)
 }
 
 matPow <- function(A, k) {
-    .Call('cods_matPow', PACKAGE = 'cods', A, k)
+    .Call('_cods_matPow', PACKAGE = 'cods', A, k)
 }
 
 integralApprox <- function(P, t, verbose = FALSE) {
-    .Call('cods_integralApprox', PACKAGE = 'cods', P, t, verbose)
+    .Call('_cods_integralApprox', PACKAGE = 'cods', P, t, verbose)
 }
 
 Omega <- function(P, t, s) {
-    .Call('cods_Omega', PACKAGE = 'cods', P, t, s)
+    .Call('_cods_Omega', PACKAGE = 'cods', P, t, s)
 }
 
 johansenCpp <- function(X, r, A, B, dt = 1) {
-    .Call('cods_johansenCpp', PACKAGE = 'cods', X, r, A, B, dt)
+    .Call('_cods_johansenCpp', PACKAGE = 'cods', X, r, A, B, dt)
 }
 
 oscillator <- function(N, dt, z0, alpha, beta, omega, freq, lvl, S_phi, S_gam, model) {
-    .Call('cods_oscillator', PACKAGE = 'cods', N, dt, z0, alpha, beta, omega, freq, lvl, S_phi, S_gam, model)
+    .Call('_cods_oscillator', PACKAGE = 'cods', N, dt, z0, alpha, beta, omega, freq, lvl, S_phi, S_gam, model)
 }
 
 rcpparma_hello_world <- function() {
-    .Call('cods_rcpparma_hello_world', PACKAGE = 'cods')
+    .Call('_cods_rcpparma_hello_world', PACKAGE = 'cods')
 }
 
 rcpparma_outerproduct <- function(x) {
-    .Call('cods_rcpparma_outerproduct', PACKAGE = 'cods', x)
+    .Call('_cods_rcpparma_outerproduct', PACKAGE = 'cods', x)
 }
 
 rcpparma_innerproduct <- function(x) {
-    .Call('cods_rcpparma_innerproduct', PACKAGE = 'cods', x)
+    .Call('_cods_rcpparma_innerproduct', PACKAGE = 'cods', x)
 }
 
 rcpparma_bothproducts <- function(x) {
-    .Call('cods_rcpparma_bothproducts', PACKAGE = 'cods', x)
+    .Call('_cods_rcpparma_bothproducts', PACKAGE = 'cods', x)
 }
 
 testCpp <- function(A) {
-    .Call('cods_testCpp', PACKAGE = 'cods', A)
+    .Call('_cods_testCpp', PACKAGE = 'cods', A)
 }
 
